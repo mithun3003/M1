@@ -28,19 +28,6 @@ int main()
 
 
 ![Screenshot 2025-04-27 160409](https://github.com/user-attachments/assets/c7e9c581-c180-4594-8083-c1bab926ee07)
-## OUTPUT:
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -116,30 +103,24 @@ Write a program to find minimum between two fraction numbers using conditional o
 ## PROGRAM:
 ```
 #include <stdio.h>
-int main()
-{
-    int a,b;
-    scanf("%d%d",&a,&b);
-    if (a<b)
-    {
-        printf("Minimum between %d and %d is %d",a,b,a);
-    }
-    else
-    {
-        printf("Minimum between %d and %d is %d",a,b,b);
-    }
+
+int main() {
+    float firstNumber, secondNumber, minNumber;
+
+    scanf("%f", &firstNumber);
+    scanf("%f", &secondNumber);
+
+    minNumber = (firstNumber < secondNumber) ? firstNumber : secondNumber;
+
+    printf("Minimum number: %.2f\n", minNumber);
+
     return 0;
 }
 ```
 ## OUTPUT:
-![Screenshot 2025-04-27 142948](https://github.com/user-attachments/assets/4848f292-6225-4d37-ad71-366111ce3c01)
-## OUTPUT:
 
 
-
-
-
-
+![image](https://github.com/user-attachments/assets/bb67493a-c5df-43b1-b4f5-319c764a62a1)
 
 
 
